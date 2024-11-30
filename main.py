@@ -37,7 +37,9 @@ def searchAnimes():
 @app.route('/api/getFavoritesList', methods=['GET'])
 def getFavoritesList():
     data = {'favorites':[]}
+    print("OUTSIDE!")
     try:
+        print("INSIDE!")
         connection = psycopg.connect(**connection_params)
         print("Connection successful!")
 
