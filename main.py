@@ -57,6 +57,8 @@ def getFavoritesList():
         print(f"Could not connect to the database: {e}")
     except psycopg.Error as e:
         print(f"Database error: {e}")
+    except Exception as e:
+        print(e)
 
     finally:
         if 'connection' in locals() and connection:
