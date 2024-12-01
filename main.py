@@ -8,7 +8,7 @@ CORS(app)
 
 connection_params = {
     "host": "localhost",
-    "port": 5433,
+    "port": 5432,
     "dbname": "postgres", 
     "user": "admin",
     "password": "admin",
