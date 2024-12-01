@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 connection_params = {
-    "host": "localhost",
+    "host": "postgres",
     "port": 5432,
     "dbname": "postgres", 
     "user": "admin",
